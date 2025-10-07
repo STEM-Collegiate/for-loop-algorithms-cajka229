@@ -83,7 +83,15 @@ function countEvens(testArrays){
 function countPositives(arr){
 }
 
-function filterOdds(arr){
+function filterOdds(testArrays){
+    let numberOfOdds = [];
+    for (val of testArrays){
+        if ((val%2)!=0){
+            numberOfOdds.push(val);
+        }
+    }
+    console.log(numberOfOdds);
+    return numberOfOdds;
 }
 
 function filterNegatives(arr){
