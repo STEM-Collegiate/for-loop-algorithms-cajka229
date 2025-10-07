@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common For Loops</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.nathanforsyth.ca/teacher-tests.js"></script>
+
+    <script src="loops.js"></script>
+    <script src="helper.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+    <h1>Common For Loop Algorithms</h1>
+<div id="all-tasks">
+
+    <div class="task">
+        <h2>Summation</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Add each value of the array to a running total.</p>
+        <p><span class="output">Output</span>: total</p>
+        <code id="sum" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-sum">Run Tests</button>
+            <div id="sum-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Mean</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Add all values together, then divide the total by the number of elements.</p>
+        <p><span class="output">Output</span>: mean value of the array</p>
+        <code id="mean" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-mean">Run Tests</button>
+            <div id="mean-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Transformation (Double)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Create a new array where each element is twice the value of the original.</p>
+        <p><span class="output">Output</span>: new array of doubled values</p>
+        <code id="double" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-double">Run Tests</button>
+            <div id="double-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Transformation (Square)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Create a new array where each element is squared.</p>
+        <p><span class="output">Output</span>: new array of squared values</p>
+        <code id="square" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-square">Run Tests</button>
+            <div id="square-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Minimum</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Compare all elements to find the smallest value.</p>
+        <p><span class="output">Output</span>: smallest number in the array</p>
+        <code id="min" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-min">Run Tests</button>
+            <div id="min-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Maximum</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Compare all elements to find the largest value.</p>
+        <p><span class="output">Output</span>: largest number in the array</p>
+        <code id="max" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-max">Run Tests</button>
+            <div id="max-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Count Instances (Evens)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Count how many elements are even numbers.</p>
+        <p><span class="output">Output</span>: number of even elements</p>
+        <code id="countEvens" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-countEvens">Run Tests</button>
+            <div id="countEvens-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Count Instances (Positives)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Count how many elements are greater than zero.</p>
+        <p><span class="output">Output</span>: number of positive elements</p>
+        <code id="countPositives" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-countPositives">Run Tests</button>
+            <div id="countPositives-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Filter Instances (Odds)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Create a new array with only the odd numbers from the original array.</p>
+        <p><span class="output">Output</span>: new array of odd numbers</p>
+        <code id="filterOdds" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-filterOdds">Run Tests</button>
+            <div id="filterOdds-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Filter Instances (Negatives)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Create a new array containing only negative values from the original array.</p>
+        <p><span class="output">Output</span>: new array of negative numbers</p>
+        <code id="filterNegatives" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-filterNegatives">Run Tests</button>
+            <div id="filterNegatives-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Existential Quantifier (Negative Exists)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Check if at least one value in the array is negative.</p>
+        <p><span class="output">Output</span>: true or false</p>
+        <code id="negativeExists" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-negativeExists">Run Tests</button>
+            <div id="negativeExists-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Existential Quantifier (First Even)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Scan through the array and return the first even number found.</p>
+        <p><span class="output">Output</span>: first even number or null if none exist</p>
+        <code id="firstEven" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-firstEven">Run Tests</button>
+            <div id="firstEven-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Universal Quantifier (All Positive)</h2>
+        <p><span class="input">Input</span>: An array of integers.</p>
+        <p><span class="process">Process</span>: Check if every element in the array is positive.</p>
+        <p><em>Note: 0 is not a positive number.</em></p>
+        <p><span class="output">Output</span>: true or false</p>
+        <code id="allPositive" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-allPositive">Run Tests</button>
+            <div id="allPositive-results" class="results"></div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Sanity Check (All Defined)</h2>
+        <p><span class="input">Input</span>: An array of any values.</p>
+        <p><span class="process">Process</span>: Verify that every element in the array is defined and not null or empty.</p>
+        <p><span class="output">Output</span>: true or false</p>
+        <code id="allDefined" class="language-javascript"></code>
+        <div class="tests">
+            <button id="test-allDefined">Run Tests</button>
+            <div id="allDefined-results" class="results"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
