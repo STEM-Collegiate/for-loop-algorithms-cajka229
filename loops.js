@@ -12,44 +12,72 @@ const testArrays = [
 
 function sumArray(testArrays){
     let total = 0;
-    for(val of arr){
+    for(val of testArrays){
         total += val;
     }
     console.log("The sum total is: ", total);
     return total;
 }
 
-function meanArray(arr){
+function meanArray(testArrays){
     let average = 0;
     for (val of testArrays){
-        average += vla;
+        average += val;
     }
     average = average/testArrays.length;
-    console.log("the average is "+average)
+    console.log("the average is " + average);
+    return average
 }
 
-const doubleVal = [];
-function doubleArray(arr){
+function doubleArray(testArrays){
+    const doubleVal = [];
     for (val of testArrays){
         doubleVal.push(val*2);
     }
     console.log(doubleVal);
+    return doubleVal;
 }
-const squareVal = [];
-function squareArray(arr){
+
+function squareArray(testArrays){
+    const squareVal = [];
     for (val of testArrays){
-        squareVal.push(val ** 2);
+        squareVal.push(val * val);
     }
     console.log(squareVal);
+    return squareVal;
 }
 
-function minValue(arr){
+function minValue(testArrays){
+    let minVal = testArrays[0];
+    for (val of testArrays){
+        if (val<minVal){
+            minVal = val;
+        }
+    }
+    console.log(minVal);
+    return minVal;
 }
 
-function maxValue(arr){
+function maxValue(testArrays){
+    let maxVal = testArrays[0];
+    for (val of testArrays){
+        if (val>maxVal){
+            maxVal = val;
+        }
+    }
+    console.log(maxVal);
+    return maxVal;
 }
 
-function countEvens(arr){
+function countEvens(testArrays){
+    let numberOfEvens = 0;
+    for (val of testArrays){
+        if ((val%2)==0){
+            numberOfEvens += 1;
+        }
+    }
+    console.log(numberOfEvens);
+    return numberOfEvens
 }
 
 function countPositives(arr){
