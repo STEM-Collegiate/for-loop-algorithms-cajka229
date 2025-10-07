@@ -10,7 +10,7 @@ const testArrays = [
 
 
 
-function sumArray(arr){
+function sumArray(testArrays){
     let total = 0;
     for(val of arr){
         total += val;
@@ -20,12 +20,27 @@ function sumArray(arr){
 }
 
 function meanArray(arr){
+    let average = 0;
+    for (val of testArrays){
+        average += vla;
+    }
+    average = average/testArrays.length;
+    console.log("the average is "+average)
 }
 
+const doubleVal = [];
 function doubleArray(arr){
+    for (val of testArrays){
+        doubleVal.push(val*2);
+    }
+    console.log(doubleVal);
 }
-
+const squareVal = [];
 function squareArray(arr){
+    for (val of testArrays){
+        squareVal.push(val ** 2);
+    }
+    console.log(squareVal);
 }
 
 function minValue(arr){
