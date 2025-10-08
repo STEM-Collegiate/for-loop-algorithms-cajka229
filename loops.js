@@ -80,7 +80,15 @@ function countEvens(testArrays){
     return numberOfEvens
 }
 
-function countPositives(arr){
+function countPositives(testArrays){
+    let numberOfPos = 0;
+    for (val of testArrays){
+        if (val>0){
+            numberOfPos += 1;
+        }
+    }
+    console.log(numberOfPos);
+    return numberOfPos;
 }
 
 function filterOdds(testArrays){
@@ -94,18 +102,58 @@ function filterOdds(testArrays){
     return numberOfOdds;
 }
 
-function filterNegatives(arr){
+function filterNegatives(testArrays){
+    const negValues = [];
+    for (val of testArrays){
+        if(val<0){
+            negValues.push(val);
+        }
+    }
+    console.log(negValues);
+    return negValues;
 }
 
-function negativeExists(arr){
+function negativeExists(testArrays){
+    let negTest = false;
+    for (val of testArrays){
+        if (val < 0){
+            negTest = true;
+        }
+    }
+    console.log(negTest);
+    return negTest;
 }
 
-function firstEvenNumber(arr){
+function firstEvenNumber(testArrays){
+    let evenNum = null;
+    for (val of testArrays){
+        if (evenNum == null && (val%2) == 0){
+            evenNum = val;
+        }
+    }
+    console.log(evenNum);
+    return evenNum;
 }
 
-function allElementsPositive(arr){
+function allElementsPositive(testArrays){
+    let posTest = true;
+    for (val of testArrays){
+        if (val < 0 || val == 0){
+            posTest = false;
+        }
+    }
+    console.log(posTest);
+    return posTest;
 }
 
-function allElementsDefined(arr){
+function allElementsDefined(testArrays){
+    let indicator = true;
+    for (val of testArrays){
+        if (val == null || val == undefined){
+            indicator = false;
+        }
+    }
+    console.log(indicator);
+    return indicator;
 }
 
